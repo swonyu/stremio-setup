@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-09-30",
+  "purpose": "Reference settings for manual setup; this file is not a Stremio account export or native import format.",
+  "observed_versions": {
+    "shell": "5.1.28",
+    "web": "6.0.4",
+    "streaming_server": "4.21.2",
+    "architecture": "arm64"
+  },
+  "playback": {
+    "hardware_accelerated_decoding": true,
+    "torrent_profile": "Fast",
+    "cache_gib": 10,
+    "cache_bytes": 10737418240,
+    "subtitle_language": "English",
+    "subtitle_size_percent": 100,
+    "subtitle_color": "white",
+    "subtitle_background": "transparent",
+    "subtitle_outline": "black",
+    "style_ass_subtitles": true,
+    "audio_language": "English",
+    "surround_sound": false,
+    "auto_play_next_episode": true,
+    "next_video_popup_seconds": 35,
+    "external_player": "Disabled",
+    "transcode_profile": "Disabled",
+    "streaming_server_url": "http://localhost:11470/"
+  },
+  "observed_fast_profile_values": {
+    "btMaxConnections": 200,
+    "btDownloadSpeedSoftLimit": 4194304,
+    "btDownloadSpeedHardLimit": 39321600,
+    "btMinPeersForStable": 10
+  },
+  "addons": {
+    "torrentio": {
+      "manifest_url": "https://torrentio.strem.fun/sort=seeders%7Cqualityfilter=brremux,threed,scr,cam,720p,480p,other,unknown%7Climit=20/manifest.json",
+      "sort": "seeders",
+      "maximum_total_results": 20,
+      "excluded_quality_codes": [
+        "brremux",
+        "threed",
+        "scr",
+        "cam",
+        "720p",
+        "480p",
+        "other",
+        "unknown"
+      ],
+      "debrid_service": null
+    },
+    "tmdb": {
+      "manifest_url": "https://tmdb.elfhosted.com/N4IgTgDgJgRgsgUygSwIYBUCeEEGcQBcoEA9rgC4JiHlgCuCANCADYkDmJhAZqi7kxAxUAYwDWUMCQg8+AgL7Ny00hSq4xCTIRAglKspTC4AwiQB23ZO0LFDVLDh2qjAWigJedFuT0gKmCwIOgC2JB5g5n7kABZ0ITDmqMgsAEKoUOwIAApkyOTIFjrKEK5g1jG+SnEJSSnpmQgAysgAXsEE-iF8LNE1iclpLHTUBLz8CIog5CGw2WCeyAAexfTBzCyo5ux0qFk6COauAKpNfhQLqCHI24QA2gC6zCKo5Hwc+AR3oMhQxbMwAB0m0oFGi2A6IDCADdkOsQEkQpCADKvPDkAAEACUEEFUAJ8MxcDESAB3ACS5gAEiQkTQ1oofn9OjNYMC0WClBCdAJyng-IiURzMTi8QTziSKdTaR1aAxGSBfv82bRDihblynJ0YXCBVdIegFuZ1TYiZLKTS6QQ5ZNGEzlUDVcabqbptzOry4YSEfqdIa1S6JWSLTL6fK7YrmdMAYCSuCtVCSLD4YKdLkIN5UNQzcHpVabQqlSyY3HNZDPfzmKnOunM9n-Oa87KGRGi9G2ZgEFn45CdSnfZ0AJpd+vE3OWjrjBStqOsoGd7tlnlUL16q0gYeLhvj0NjOS2+3Ftmbba7fZL7VJ3VVgcgVGnvbwsdSieyCaF2cxk87R895d871qzvLYf3PbcX13KdJieEAXgoMw6HMXwCAAVhzUkAEEsixV4XUpABxQ4Fk+aY1j8Q5UBgIIsIQHCCluTooKDTDsNw7YAHV8hickATowNGP3c5aGQERyBxdhCnMAAxFIjB0JjmBQCS3hYUUuwEGSfCoMNJiAA/manifest.json",
+      "configure_url": "https://tmdb.elfhosted.com/configure/",
+      "language": "en-US",
+      "digital_release_filter": true,
+      "strict_region_filter": false,
+      "use_tmdb_prefix": true,
+      "search_enabled": true,
+      "home_catalogs": [
+        "Latest Releases Movie",
+        "Latest Releases Series",
+        "Trending Movie",
+        "Trending Series",
+        "Popular Movie",
+        "Popular Series"
+      ],
+      "discover_only_catalogs": [
+        "Year Movie",
+        "Year Series",
+        "Language Movie",
+        "Language Series"
+      ],
+      "connected_accounts": []
+    },
+    "rotten_tomatoes": {
+      "manifest_url": "https://7a82163c306e-rottentomatoes.baby-beamup.club/manifest.json",
+      "catalogs": [
+        "RT: Certified Fresh",
+        "RT: Fresh TV Shows"
+      ],
+      "optional_rating_poster_key": null
+    },
+    "opensubtitles_v3": {
+      "manifest_url": "https://opensubtitles-v3.strem.io/manifest.json",
+      "legacy_opensubtitles_removed": true
+    }
+  }
+}
